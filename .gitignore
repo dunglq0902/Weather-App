@@ -1,0 +1,9 @@
+# Bỏ qua file .env
+backend/.env
+
+# Bỏ qua thư mục môi trường ảo Python (nếu bạn có dùng)
+backend/venv/
+backend/.venv/
+
+# Bỏ qua các file cache của Python
+backend/__pycache__/
