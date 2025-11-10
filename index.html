@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<!-- lang="en" đặt ngôn ngữ chính của trang web là tiếng Anh -->
+<html lang="en">
+<head>
+    <!-- Đặt bảng mã ký tự là UTF-8 -->
+    <meta charset="UTF-8">
+    <!-- Giúp trang web hiển thị tốt trên thiết bị di động -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Tiêu đề trang web -->
+    <title>Weather App</title>
+    <!-- Liên kết đến file CSS để định dạng giao diện -->
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="weather-container">
+        <h1>Weather App</h1>
+        <!--h1: tiêu đề chính của trang-->
+        <div class="search-box">
+            <!-- Nhãn cho input để hỗ trợ trình đọc màn hình -->
+            <label for="cityInput">
+                <input type="text" id="cityInput" placeholder="Enter the city" aria-label="City"></label>
+            <!-- type="button" để tránh submit form mặc định -->
+            <button id="searchBtn" type="button">Search</button>
+            <button id="locationBtn" title="Lấy vị trí của tôi">📍</button>
+        </div>
+        
+        <div id="weatherResult" class="weather-result">
+            </div>
+        <div id="forecastResult" class="forecast-result">  
+            </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
